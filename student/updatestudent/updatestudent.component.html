@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    
+</head>
+<body>
+    <div class="mt-4">
+    <div class="card">
+      <h1>Student Updation</h1>  
+       
+        <p></p>
+            <form class="updateForm">
+              <div class="form-group">
+                <label style="align-items:flex-start;">Student ID</label>
+                <input type="text"  #sid1 (keyup)="setsid(sid1.value)" class="form-control" id="sid" name ="sid" [value]="sid">
+              </div>
+              <p></p>
+              <div class="form-group">
+                <label >Student Name</label>
+                <input type="text" #sname2 (keyup)="setsname(sname2.value)" class="form-control" id="sname" name="sname" [value]="sname">
+              </div><p></p>
+              <div class="form-group">
+                  <label>Student Class</label>
+                  <input type="text" #sclass2 (keyup)="setsclass(sclass2.value)" class="form-control" id="sclass" name="sclass" [value]="sclass">
+                </div><p></p>
+                <div class="form-group">
+                  <label >Section</label>
+                  <input type="text" #section2 (keyup)="setsection(section2.value)" class="form-control" id="section" name="section" [value]="section">
+                </div><p></p>
+                <div class="form-group">
+                    <label>Roll number</label>
+                    <input type="text" #rn2 (keyup)="setsrollNo(rn2.value)" class="form-control" id="srollNo" name="srollNo" [value]="srollNo">
+                  </div><p></p>
+                  <div class="form-group">
+                      <label >Father Name</label>
+                      <input type="text"  #fn2 (keyup)="setfatherName(fn2.value)" class="form-control" id="fatherName" name="fatherName" [value]="fatherName">
+                    </div><p></p>
+                  <div class="form-group">
+                      <label>phone number</label>
+                      <input type="text" #pn2 (keyup)="setsphonenumber(pn2.value)" class="form-control" id="sphonenumber" name="sphonenumber" [value]="sphonenumber">
+                  </div><p></p>
+                  <div class="form-group">
+                      <label>Student username</label>
+                      <input type="text"#username2 (keyup)="setsusername(username2.value)" class="form-control" id="susername" name="susername" [value]="susername">
+                  </div><p></p><div style="text-align: center;">
+              <pre><button type="submit" class="btn-primary" (click)="UpdateRecords()">Submit</button>  <button type="submit" class="btn-primary" (click)="cancel()" >Cancel</button></pre></div>
+            </form>   
+      </div>
+    </div>
+    
+  </body>
+</html>
+<!-- <div class="form-group">
+       <label >Student ID</label>
+        <input type="text" class="form-control" id="sid" name ="sid" placeholder="Enter Student ID">
+       </div> -->

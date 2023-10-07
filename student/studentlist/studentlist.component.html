@@ -1,0 +1,85 @@
+<!-- <div class="mt-4">
+    <div class="card">
+        <h3>Student Registration and Updation</h3>
+        <form  >
+            <div class="form-group" >
+              <label >Student ID</label>
+              <input type="text"  #sid (keyup)="setsid(sid.value)" class="form-control" id="sid" name ="sid" placeholder="Enter Student ID"  required ng-pattern="/^$/" >
+            </div>
+            <p></p>
+            <div class="form-group">
+              <label >Student Name</label>
+              <input type="text" #sname (keyup)="setsname(sname.value)" class="form-control" id="sname" name="sname" placeholder="Enter Student Name">
+            </div><p></p>
+            <div class="form-group">
+                <label>Student Class</label>
+                <input type="text" #sclass (keyup)="setsclass(sclass.value)" class="form-control" id="sclass" name="sclass" placeholder="Enter Student Class">
+              </div><p></p>
+              <div class="form-group">
+                <label >Section</label>
+                <input type="text" #section (keyup)="setsection(section.value)" class="form-control" id="section" name="section" placeholder="Enter Student Section">
+              </div><p></p>
+              <div class="form-group">
+                  <label>Roll number</label>
+                  <input type="text" #rn (keyup)="setsrollNo(rn.value)" class="form-control" id="srollNo" name="srollNo" placeholder="Enter Roll no">
+                </div><p></p>
+                <div class="form-group">
+                    <label >Father Name</label>
+                    <input type="text"  #fn (keyup)="setfatherName(fn.value)" class="form-control" id="fatherName" name="fatherName" placeholder="Enter Student Father's name">
+                  </div><p></p>
+                <div class="form-group">
+                    <label>phone number</label>
+                    <input type="text" #pn (keyup)="setsphonenumber(pn.value)" class="form-control" id="sphonenumber" name="sphonenumber" placeholder="Enter Student Phone number">
+                </div><p></p>
+                <div class="form-group">
+                    <label>Student username</label>
+                    <input type="text"#username (keyup)="setsusername(username.value)" class="form-control" id="susername" name="susername" placeholder="Enter Student Username">
+                </div><p></p>
+            <button type="submit" class="btn-primary" (click)="save()" [disabled]="!sid.required">Submit</button>
+          </form>
+    </div>
+</div> -->
+
+<div>
+ 
+<div class="mt-3" >
+
+  <h3 style="text-align: center;"> Student Table</h3>
+  <table class="studenttable" >
+      <thead>     
+        <tr>
+          <th scope="col"> Student ID</th>
+          <th scope="col"> Student Name</th>
+          <th scope="col"> Class</th>
+          <th scope="col">Section</th>
+          <th scope="col">Roll number</th>
+          <th scope="col">Father Name</th>
+          <th scope="col">Phone Number</th>
+          <th scope="col">Student username</th>
+          <th scope="col">Operations Provided</th>
+        </tr>
+      </thead>
+      <tbody><tr *ngFor="let StudentItem of StudentArray">
+        <td>{{StudentItem.sid}}</td>
+        <td>{{StudentItem.sname }}</td>
+        <td>{{StudentItem.sclass }}</td>
+        <td>{{StudentItem.section}}</td>
+        <td>{{StudentItem.srollNo }}</td>
+        <td>{{StudentItem.fatherName}}</td>
+        <td>{{StudentItem.sphonenumber}}</td>
+        <td>{{StudentItem.susername }}</td>
+        <td><pre><button type="button" class="btn" (click)="setUpdate(StudentItem)">Edit</button>  <button type="button" class="btn" (click)="setDelete(StudentItem)" >Delete</button></pre>
+            </td>
+          </tr>
+          
+      </tbody>
+    </table>
+    
+ 
+    </div>
+</div>
+<p></p><br>
+<div style="align-items: center; text-align: center;">
+<pre><button type="button" class="btn-primary" (click)="addStudent()" >Add Student</button> <button type="button" class="btn-primary" (click)="loginpage()" >Go Back</button></pre>
+<!-- style="background-color: aquamarine !important;" -->
+</div>

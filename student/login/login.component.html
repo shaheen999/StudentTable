@@ -1,0 +1,34 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <h2>Welcome to student's data login portal</h2>
+</head> -->
+<!-- <body> -->
+    <form [formGroup]="loginform" name="formname" (ngSubmit)="loggedIn()" style="text-align: center; margin-top: 5%;">
+		<div ><label>Username: </label>
+        <input type="text" #username ng-model="name" (keyup)="GetUsername(username.value)" name="username" id="username" formControlName="username" placeholder="enter username"
+			ng-required="true"
+			ng-pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]">
+        </div>
+        <p></p>
+        <div><label>Password: </label><!-- //#username is used to send direct input value -->
+        <input type="password" #userpassword  (keyup)="GetUserpassword(userpassword.value)" name="userpassword" id="userpassword" formControlName="userpassword" ng-required="true" placeholder="enter password">
+        </div>
+        <p></p>     
+        <button type="submit" class="btn-primary" >Login</button>
+        <!-- ngSubmit() function maes sure that as soon as you click on button you get looged in  -->
+        <!-- (submit)="" it will get submit in function loggedIn() in component.ts file-->
+    </form>
+    
+    <!-- <div>{{username1}}</div>
+    <div>{{password}}</div>
+    <div>{{k}}</div>
+    <div>{{l}}</div> -->
+    <!-- <div>{{pass2}} </div>
+    <div> {{user2}} </div> -->
+<!-- </body>
+</html> -->

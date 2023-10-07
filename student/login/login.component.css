@@ -1,0 +1,12 @@
+.btn-primary
+{
+    font-weight: bold;
+    text-align: center !important;
+    background-color:rgb(113, 48, 211);
+    padding: 10px;
+    border-radius: 15px;
+}
+.btn-primary:active 
+{    
+background-color:  rgb(224, 215, 226);;
+}

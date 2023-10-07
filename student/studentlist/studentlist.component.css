@@ -1,0 +1,61 @@
+td, th {
+    text-align: center !important;
+    vertical-align: middle !important;
+    border: 1px solid;
+}
+th
+{
+    background-color: rgb(151, 93, 193);
+}
+td{
+    background-color:  lavender;
+}
+.mt-4
+{
+    text-align: center !important;
+    background-color: lavender;
+}
+.btn-primary
+{
+    font-weight: bold;
+    text-align: center !important;
+    background-color:rgb(113, 48, 211);
+    padding: 10px;
+    border-radius: 15px;
+    margin:auto;
+}
+.btn-primary:active 
+{    
+background-color: rgb(224, 215, 226);
+}
+.btn
+{
+    font-weight: bold;
+    text-align: center !important;
+    background-color:rgb(183, 139, 251);
+    padding: 10px;
+    border-radius: 15px;
+    align-self: center;
+}
+.btn:active
+{
+    background-color: rgb(224, 215, 226);
+}
+.studenttable
+{
+    column-gap: 80px; 
+    row-gap: 80px;
+   text-align: center;
+   margin-left: auto;
+    margin-right: auto;
+    border: 5px solid;
+    height: 25px;
+}
+input{
+    text-align: center;
+}
+label{
+    display: inline-block;
+    text-align: left;
+    width:140px
+}
